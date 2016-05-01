@@ -1,12 +1,12 @@
 sapplymakeCacheMatrix <- function(x = matrix()) {
-## set the matrix
-## get the matrix
-## set the inverse
-## get the inverse
-## this list is used as the input to cacheSolve()
+  ## set the matrix
+  ## get the matrix
+  ## set the inverse
+  ## get the inverse
+  ## this list is used as the input to cacheSolve()
 inv_x <- NULL
 set <- function(y) {
-## use "<<-" to assign a value to an object in an environment 
+  ## use "<<-" to assign a value to an object in an environment 
 x <<- y
 inv_x <<- NULL
 }
@@ -21,12 +21,12 @@ getinse = getinse)
 cacheSolve <- function(x, ...) {
 inv_x <- x$getinse()
 if (!is.null(inv_x)) {
-## get it from the cache and skips the computation.
+  ## get it from the cache and skips the computation.
 message("getting cached inverse matrix")
 return(inv_x)
 } else {
 inv_x <- solve(x$get())
-## sets the value of the inverse in the cache via the setinv function.
+  ## sets the value of the inverse in the cache via the setinv function.
 x$setinse(inv_x)
 return(inv_x)
 }
