@@ -59,4 +59,4 @@ Commit your completed R file into YOUR git repository and push your git branch t
 Submit to Coursera the URL to your GitHub repository that contains the completed R code for the assignment.
 Grading
 
-This assignment will be graded via peer assessment.
+This assignment will be graded via peer assessment
