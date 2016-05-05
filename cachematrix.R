@@ -1,7 +1,7 @@
-## Put comments here that give an overall description of what your
-## functions do
+  ## Put comments here that give an overall description of what your
+  ## functions do
 
-## Write a short comment describing this function
+  ## Write a short comment describing this function
 
 sapplymakeCacheMatrix <- function(x = matrix()) {
   ## set the matrix
@@ -12,7 +12,7 @@ sapplymakeCacheMatrix <- function(x = matrix()) {
 
 inv_x <- NULL
 set <- function(y) {
-## use "<<-" to assign a value to an object in an environment 
+  ## use "<<-" to assign a value to an object in an environment 
 x <<- y
 inv_x <<- NULL
 }
@@ -27,15 +27,15 @@ getinse = getinse)
 
 
 
-## Write a short comment describing this function
+  ## Write a short comment describing this function
 
-## This function computes the inverse of the special "matrix" created by 
-## makeCacheMatrix above.
+  ## This function computes the inverse of the special "matrix" created by 
+  ## makeCacheMatrix above.
 
 cacheSolve <- function(x, ...) {
 inv_x <- x$getinse()
 if (!is.null(inv_x)) {
-## get it from the cache and skips the computation.
+  ## get it from the cache and skips the computation.
 message("getting cached inverse matrix")
 return(inv_x)
 } else {
